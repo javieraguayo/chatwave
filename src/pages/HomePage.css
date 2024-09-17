@@ -1,0 +1,73 @@
+.home-container {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(to right, #4a90e2, #50e3c2);
+    color: white;
+    max-width: 100%; /* Asegurarse de que el contenedor no exceda el ancho de la pantalla */
+    overflow-x: hidden;
+    width: 100%; /* Asegurarse de que el contenedor ocupe todo el ancho */
+    margin: 0; /* Eliminar márgenes que puedan causar espacio */
+    box-sizing: border-box; /* Incluir padding en el ancho total */
+    min-height: 91.2vh; /* Asegurarse de que el contenedor ocupe al menos el alto de la ventana */
+    display: flex; /* Usar flexbox para controlar el espacio */
+    flex-direction: column; /* Alinear elementos en columna */
+    justify-content: space-between; /* Distribuir espacio entre elementos */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    flex-wrap: wrap; /* Permitir que las características se envuelvan en pantallas pequeñas */
+}
+
+.feature-card {
+    width:100%; /* Hacer que las tarjetas ocupen el ancho completo en móviles */
+    max-width: 300px; /* Limitar el ancho máximo en pantallas más grandes */
+    margin: 10px; 
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 60px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 50px;
+    color: #50e3c2;
+    margin-bottom: 15px;
+}
+
+.login-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #50e3c2;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #4a90e2;
+}
+
+.button-icon {
+    margin-left: 8px; /* Espacio entre el texto y el icono */
+    font-size: 18px; /* Tamaño del icono */
+}
